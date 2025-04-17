@@ -10,7 +10,7 @@ export default function Header() {
     `block py-2 pr-2 pl-2 rounded ${
       path === targetPath
         ? 'text-white bg-cyan-700 md:bg-transparent md:text-cyan-700 dark:text-white'
-        : 'text-gray-400 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 dark:text-cyan-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+        : 'text-gray-400 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-cyan-700 md:p-0 dark:text-cyan-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
     }`;
 
   return (
@@ -36,9 +36,7 @@ export default function Header() {
         </Button>
 
         <Link to="/sign-in">
-          <Button className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white hover:bg-gradient-to-bl" pill>
-            Sign In
-          </Button>
+          <Button className="text-blue-500 bg-white hover:bg-blue-500" outline pill>Sign In</Button>
         </Link>
 
         <Button className="w-12 h-10 hidden sm:inline" color="gray" pill>
